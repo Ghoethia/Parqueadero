@@ -31,13 +31,13 @@ while ingresos == ingresos:
                 arreglo = {placa : [tipoVehiculo, horaIngreso, servicioExtra, usoServicio]}
                 diccUsuario.update(arreglo)
                 print("Cliente Guardado")
-                print(diccUsuario)
+                #print(diccUsuario)
                 ingresos = input("\r\nIndique si es Entrada (E) o Salida (S): ")
             #Se ejecutara si NO se accede al servicio extra
             elif servicioExtra == "No" or servicioExtra == "no":
                 arreglo = {placa : [tipoVehiculo, horaIngreso, servicioExtra]}
                 diccUsuario.update(arreglo)
-                print("Maldito hambriento y chichipato")
+                print("Cliente Guardado")
                 ingresos = input("\r\nIndique si es Entrada (E) o Salida (S): ")
 
         #Se ejecutara si el vehiculo es una MOTO
@@ -56,7 +56,7 @@ while ingresos == ingresos:
             elif servicioExtra == "No" or servicioExtra == "no":
                 arreglo = {placa : [tipoVehiculo, horaIngreso, servicioExtra]}
                 diccUsuario.update(arreglo)
-                print("Maldito hambriento y chichipato")
+                print("Cliente Guardado")
                 ingresos = input("\r\nIndique si es Entrada (E) o Salida (S): ")
 
         #Se ejecutara si el vehiculo es una BICICLETA
@@ -75,7 +75,7 @@ while ingresos == ingresos:
             elif servicioExtra == "No" or servicioExtra == "no":
                 arreglo = {cedula : [tipoVehiculo, horaIngreso, servicioExtra]}
                 diccUsuario.update(arreglo)
-                print("Maldito hambriento y chichipato")
+                print("Cliente Guardado")
                 ingresos = input("\r\nIndique si es Entrada (E) o Salida (S): ")
     
       
