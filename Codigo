@@ -85,10 +85,10 @@ while ingresos == ingresos:
         horaSalida = int(input("\r\nIndique hora de salida: "))
         
         #Ciclo que permite iterar dentro del diciconario para buscar la placa
-        if placa is not diccUsuario:
-            for placa in diccUsuario:
-                    diccUsuario[placa].append(horaSalida)
-                    break
+        for x in diccUsuario:
+            x == placa
+            diccUsuario[placa].append(horaSalida)
+            break
         
         #Condicional, se ejecuta si el vehiculo es CARRO y NO se aplica descuento
         if diccUsuario[placa][0] == 1 and (diccUsuario[placa][2] == "No" or diccUsuario[placa][2] == "no"):
